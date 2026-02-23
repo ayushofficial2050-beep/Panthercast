@@ -1,0 +1,283 @@
+/* =========================================
+   Panther Cast - Premium CSS
+   Developer: Ayush Tiwari | Panthera Store
+   ========================================= */
+
+/* Basic Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d12; /* Deep Dark Background */
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   Header Section
+   ========================================= */
+.header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(180deg, #151522 0%, #0d0d12 100%);
+    border-bottom: 2px solid #00f2fe; /* Neon Cyan Border */
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1);
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.4);
+    animation: float 3s ease-in-out infinite; /* Hover animation */
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #a0a0b0;
+    font-weight: 600;
+}
+
+/* =========================================
+   Instructions Section (Important Rules)
+   ========================================= */
+.instructions-section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.instructions-section h2 {
+    text-align: center;
+    color: #ff4757; /* Warning Red */
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.rule-card {
+    background: #181824;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #ff4757;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.rule-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 71, 87, 0.2);
+    border-left: 5px solid #ffa502; /* Turns yellow on hover */
+}
+
+.rule-card h3 {
+    color: #ffa502;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.rule-card p {
+    color: #c8d6e5;
+    font-size: 1rem;
+}
+
+/* =========================================
+   Download Section (Apps)
+   ========================================= */
+.download-section {
+    padding: 70px 20px;
+    background-color: #12121a;
+    border-top: 1px solid #2d2d3d;
+    border-bottom: 1px solid #2d2d3d;
+}
+
+.download-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.app-card {
+    background: linear-gradient(145deg, #1c1c28, #151520);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border: 1px solid #323246;
+    transition: transform 0.3s ease;
+}
+
+.app-card:hover {
+    transform: scale(1.03);
+    border-color: #00e676; /* Green border on hover */
+}
+
+.app-card img {
+    width: 90px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.app-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.app-card p {
+    color: #8395a7;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+/* =========================================
+   Buttons
+   ========================================= */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.download-btn {
+    background: #00e676; /* High-contrast Green */
+    color: #0d0d12;
+    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.3);
+}
+
+.download-btn:hover {
+    background: #00c853;
+    box-shadow: 0 8px 25px rgba(0, 230, 118, 0.6);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   Share Section
+   ========================================= */
+.share-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #0d0d12;
+}
+
+.share-section p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #b2bec3;
+}
+
+.share-btn {
+    background: #3742fa; /* Neon Blue */
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(55, 66, 250, 0.3);
+}
+
+.share-btn:hover {
+    background: #5352ed;
+    box-shadow: 0 8px 25px rgba(55, 66, 250, 0.6);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   Footer Section
+   ========================================= */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #08080b;
+    border-top: 1px solid #1a1a24;
+}
+
+.footer-branding {
+    width: 180px; /* Branding image size */
+    margin-bottom: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.1));
+}
+
+.footer-branding:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #576574;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* =========================================
+   Animations
+   ========================================= */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* =========================================
+   Mobile Responsiveness
+   ========================================= */
+@media (max-width: 768px) {
+    .header h1 { font-size: 2.2rem; }
+    .header p { font-size: 0.95rem; }
+    
+    .download-container { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .app-card { 
+        width: 100%; 
+        max-width: 380px; 
+    }
+    
+    .instructions-section h2, 
+    .download-section h2 {
+        font-size: 1.8rem;
+    }
+}
